@@ -18,11 +18,24 @@
      if (isset($_POST["a"] , $_POST["b"])) {
         $a = $_POST["a"];
         $b = $_POST["b"];
-        echo "Addition: ".($a + $b)."<br>";
-        echo "Substraction: ".($a - $b)."<br>";
-        echo "Multiplication: ".($a * $b)."<br>";
-        echo "Division: ".($a / $b)."<br>";
-     }
+        
+        if(is_numeric($a) && is_numeric($b)){
+            $addition = $a + $b;
+            $subtraction = $a - $b;
+            $multiple = $a * $b;
+       }
+           if($a != 0 ){
+               $div = $a / $b;
+               echo "add= $addition<br>";
+              echo  "Subtraction= $subtraction<br>";
+              echo  "mutiple = $multiple<br>";
+              echo "div = $div<br>";
+              
+           }
+           else{ 
+               echo "can't div";
+           }
+        } 
     ?>
 </body>
 </html>
