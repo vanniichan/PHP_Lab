@@ -22,9 +22,11 @@
         $pas = $_POST["pas"];
         
         if($user === 'admin' && $pas === '123123'){
-            echo "You are admin";
+            header("Location: welcome.php?user=" . urlencode($user));
+            exit();
         }elseif($user === "user" && $pas === "12345"){
-            echo "Welcome back $user !";
+            header("Location: welcome.php?user=" . urlencode($user));
+            exit();
         }else{
             echo "Check your user or pass";
         }
