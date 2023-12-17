@@ -22,10 +22,10 @@
         $pas = $_POST["pas"];
         
         if($user === 'admin' && $pas === '123123'){
-            header("Location: welcome.php?user=" . urlencode($user));
+            header("Location: Bai_1welcome.php?user=" . urlencode($user));
             exit();
         }elseif($user === "user" && $pas === "12345"){
-            header("Location: welcome.php?user=" . urlencode($user));
+            header("Location: Bai_1welcome.php?user=" . urlencode($user));
             exit();
         }else{
             echo "Check your user or pass";
