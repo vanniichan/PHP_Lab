@@ -47,7 +47,7 @@ if (isset($_POST['file'])) {
                 echo "<img src=\"$uploadedFile\">";
             }
         } else {
-            echo "Đã xảy ra lỗi.";
+            echo "Error.";
         }
     } else {
         echo "File not uploaded.";
