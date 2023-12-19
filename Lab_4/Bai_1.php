@@ -36,7 +36,7 @@ if (isset($_POST['file'])) {
         if (move_uploaded_file($_FILES["file"]["tmp_name"], $uploadedFile)) {
             echo "File uploaded successfully.";
         } else {
-            echo "Đã xảy ra lỗi.";
+            echo "Error.";
         }
     } else {
         echo "File not uploaded.";
